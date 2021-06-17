@@ -5,111 +5,179 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
 }
 
 #container {
     width: 30%;
-    height: 30%;
+    height: 60%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 55px);
+    grid-template-rows: 70px 55px 55px 55px 55px 55px;
     grid-template-areas:
-    "input input input input"
-    "ac plusminus percent divide"
-    "seven eight nine time"
+    "temp input input input"
+    "ac CE percent divide"
+    "seven eight nine times"
     "four five six minus"
     "one two three plus"
     "zeero zeero decmal equals";
-    gap: 8px;
+    gap: 2px;
     margin: auto;
+    background-color: black;
+}
+.temp-result {
+    grid-area: temp;
+    text-align: center;
+    color: rgba(255, 255, 255, .75);
+    padding-top: 45px;
+    padding-right: 20px;
+    font-size: 20px;
+    
+}
+.input{
+    grid-area: input;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
-.input{
-grid-area: input;
-text-align: right;
-padding-right: 10px;
-font-size: 25px;
-margin-top: auto;
-margin-bottom: auto;
+.input .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.input .current-operand {
+    color: white;
+    font-size: 2.5rem;
 }
 
 .AC {
     grid-area: ac;
+    padding-top: 25%;
 }
 
-.plus-minus {
-    grid-area: plusminus;
+.CE {
+    grid-area: CE;
+    padding-top: 25%;
+
 }
 
 .percent {
     grid-area: percent;
+    padding-top: 25%;
+
 }
 
 .divide {
     grid-area: divide;
+    padding-top: 25%;
+
 }
 
 .seven {
     grid-area: seven;
+    padding-top: 25%;
+
 }
 
 .eight {
     grid-area: eight;
+    padding-top: 25%;
+
 }
 
 .nine {
     grid-area: nine;
+    padding-top: 25%;
+
 }
 
-.mulitply {
-    grid-area: time;
+.multiply {
+    grid-area: times;
+    padding-top: 25%;
+
 }
 
 .four {
     grid-area: four;
+    padding-top: 25%;
+
 }
 
 .five {
     grid-area: five;
+    padding-top: 25%;
+
 }
 
 .six {
     grid-area: six;
+    padding-top: 25%;
+
 }
 
 .minus {
     grid-area: minus;
+    padding-top: 25%;
+
 }
 
 .one {
     grid-area: one;
+    padding-top: 25%;
+
 }
 
 .two {
     grid-area: two;
+    padding-top: 25%;
+
 }
 
 .three {
     grid-area: three;
+    padding-top: 25%;
+
 }
 
 .plus {
     grid-area: plus;
+    padding-top: 25%;
+
 }
 
 .zero {
     grid-area: zeero;
+    padding-top: 13%;
+
 }
 
 .decimal {
     grid-area: decmal;
+    padding-top: 25%;
+
 }
 
 .equals {
     grid-area: equals;
+    padding-top: 25%;
+
 }
 
 .btn-design {
     background-color: rgb(71, 91, 114);
     text-align: center;
+}
+
+.btn-design:hover {
+    background-color: lightblue;
+}
+
+button {
+    font-size: 30px;
 }
